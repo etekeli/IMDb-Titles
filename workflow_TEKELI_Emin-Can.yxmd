@@ -1,0 +1,852 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="162" y="54" width="612" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Les jeux de données traités par ce workflow proviennent des données mises en ligne par le site IMDb. Les données sont mises à jour tous les jours par le site. 
+
+Les informations et la documentation sur ces jeux de données sont disponibles ici: https://www.imdb.com/interfaces/</Text>
+          <Font name="Arial" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="64" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1134" y="54" width="264" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Les jeux de données sont au format tsv (tab separated value). Nous devons donc préciser au chargement que les séparateurs sont des tab (onglet). Nous devons également modifier l'encodage qui est en UTF-8. Enfin, nous devons choisir l'option "Traiter les erreurs de lecture en avertissement".</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="96" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="786" y="54" width="336" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Le but de ce workflow est d'obtenir un jeu de données à partir duquel on peut effectuer des analyses pour comprendre quel genres d'oeuvres (films, séries, documentaires...) sont appréciés.</Text>
+          <Font name="Arial" size="12" style="0" />
+          <TextColor name="White" />
+          <FillColor r="0" g="0" b="64" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1412" y="164" width="596" height="320" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>4. Sortie au format csv</Caption>
+          <Style TextColor="#000000" FillColor="#ff7171" BorderColor="#000000" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1674" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\emin\Desktop\bi\imdb\oeuvres.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>;</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>65001</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>oeuvres.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1422" y="198" width="576" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>4. Sortie au format csv</Text>
+              <Font name="Arial" size="15.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="40" g="40" b="40" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="32">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1422" y="342" width="576" height="132" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text />
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+              <BG_Image>iVBORw0KGgoAAAANSUhEUgAAAqQAAAB9CAYAAAB06HFnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAH45JREFUeF7tnA2O5TYOhHP/GwTYY+0Zco0sOFmiKxz+SC6/bj2/+gCiLRYlW2VLLUwy88d//vOfv//66y/FxZB/XMg/LuQfF/KPC/nHhfzjQv5xcZp/f/z5559/KxQKhUKhUCgUPxW/DqTiOv/973//fyWuIP845B+H/OOQfxzyj0P+PQsdSEm0IDjkH4f845B/HPKPQ/5xyL9noQMpiRYEh/zjkH8c8o9D/nHIPw759yx0ICXRguCQfxzyj0P+ccg/DvnHIf+ehQ6kJFoQHPKPQ/5xyD8O+cch/zjk37M48kD6xx9//Ip3QAuCQ/5dx9bIu/u3s85fsSf8tH/vss9VaP1yyD+OU/z7iXX87ntHxr8OpDbBKlxHYvsOXjHmHVTPhQvCaqoQOTv++U8ntn+Knee485ltrLghWy7Gyew8X6y9Y27dL7RXe3f6u1mh8s/mhiFyqvWbsePjp3j+Kv92+Qm/n3jP8k9IV278iof7CZMZug1ZzDD+fbrHNv9sQ46c7NPOs8XaO+Y1fX8ne3cCmX+ZZ/Ixp1q/rIef4ver/NvlJ/x+4j23DqSYs2sMx6+zPEZGVePXWT7mDG9XulFpXT5iuekXGtKN6df20yOCWqa/I1f9Qx9i3n/GPEZHV+tt1GKN4TqG5xHMYx1SadauNmQk64eBxLaBOb/O+jquZXrUsKaqd+I1BtJpken7y/qj5oFMuoHaFf0UVr6/jG5+3l7VHW/HvNNpP0XlX/X8iM/Fw6nyRqe9I6/wz/B21LJaI9bHmqg73o75jFgX61GPGpL1Q3AM1Kq80WlGpyGXD6RGVbNal3F1TGxP9ZV2pc/0Cw2Zxp/0SJZ7N+7yz7Hcal3GVGvXsWannWm79Y5drxwIuvGMXT2rcaIW+yJxrKgbU//Ias7Jvr/pPtbualb0yI5+EivfX2Rl/rFmR3dinxPp/OvmmM1nR3ey3DvxSv+mNhJ1I9Z3upPljKwv5tixnGmcSXemPhUvOZBGVnPGTi2CNdMYK+MZXR9vZ7/QjOoenq/GQzA36e/Kjn8xt+rJas6YalfG6tpTrZHlnDhWtiHHQGLbwNwVvYMdu9OneifLOdn3N91nuser9ZPoDgSGtT2cbC536s7U5wRW/HOm+ezoTpZ7J77Lv9220Y1nrOaMu8Z3XIs10ziT7kx9Kr7tQJpFRpbvajGcrH7SHR/Lw8n6WC77hWZk9Ybno16N79h1Fu/Ojn8xt1JjWC6LjCyPuUk3uvZUa2Q1GI5dTxtyJNPjmJFJj1gNhpP1ZfSqPouKVf8wn9Xs6lk4mWZxIlf9y8LBa2dFzwLJcj/N5B+2q2tnRc/infku/3bbRjeeYbksMrI85rA/RoVrsSbrg7lKzwLJchk/9iekFVfHxPZUn+nG7phGXBDOdI/uXg7mqvHenR3/dj1zdryb+u/c0wOZ2gbmunq7Xj0QOJkex4xMOhJ1duxOn+pXyPyrwsFrh9WRST+J1e+Pnf/UfxoT2al9NSv+eQ61rs6Y9KfwXf7tto1uPCPLVVwZv8PrY78r98lyFVPtIw6kdh3bkU73dqzp+jhxQThVvZFp8X4Gtrvx3pkd/zp/nNVcxdR/Zfzufiu1mIvXsb16IHAyPY6JWLvTI7G263uHHslyHejf1Nf16b5XdGTSTyJbv6+Y/9R/GhPZqX01K+vXc6h1dcakP4Xv8m+l3dVEzchyFdnY0/gTWZ8pt9qnYqqlDqSG5TBf3dDrMDKyfFfrGtasjOF9q7xfO1VdtiEbsR7JNM/5uFVNjHdnx78qh/nKE6/DqOjqsn5VDsOJtbFtZDWeQ82uVzbkiI/nEYka1mT1kaqv4doVPdYaWOt4DqMC/evqDNezOsxNumHtGMikn0K3frtnjzrW4LUz6YaPg+FkuRNYXb/Zs3su04wsj/WZ/m68yr+rbfvpgcS2g/UeFbEm1qLu0VHp0xhZHuujnuUqygPpJ7Bi0ES1IXdk973jWd6RK/6dzne+3yf6953IPw75xyH/OOTfs/joA6nBHhR2F0R1Px1In4MOpO+D/OOQfxzyj0P+PYuPPZDaAeGOQ8Lugqju+aoDy+k8dUPx78vjVWhD5pB/HPKPQ/5xyL9n8fF/QsqiBcEh/zjkH4f845B/HPKPQ/49i18HUnupCoVCoVAoFArFT4T+hJTETBTXkX8c8o9D/nHIPw75xyH/OE7zTwdSEi0IDvnHIf845B+H/OOQfxzyj+M0/3QgJdGC4JB/HPKPQ/5xyD8O+cch/zhO808HUhItCA75xyH/OOQfh/zjkH8c8o/jNP90ICXRguCQfxzyj0P+ccg/DvnHIf84TvPvtwPpp/57mFd56oL4ru8g+qfvbw9tyBzyj0P+ccg/DvnHcZp/44HU2h6RTnOwpqt7Fa++Z3yhu/dDbzxW2and5ZVjI5N/7kn2PJ3mYE1X9ypefU9tyDPd+3+af91cV7SMrl+2fmOImuz72/Fup/aJaP3+Q6cZlX6af+2BND78qoas1r0r2Ya8w6l+fNdzdf7FZ1jVkNW6d+VpG/LdTO//Sf51c13RYo3R9TNW9r8sJ/5h8q/zbqf2qWj99poR28hp/l0+kEYqbWUMy2Eg3mZ1BGszHanqvI0vFGuxHq+NTkNcs58eSNa3q600I2qxBvWoMXQbcrxPd99KWxnDchiIt1kdwdpMR6o6bz9pQ34FlW/Ok/3DuU4+GCu52O7WL4J5v7afMR9zhrejltU6rlX6KUz+7Tz/6XN9BVq/v9P1i5zmX/uXmq6agExjZP0wZ9ddnxUdiW0jyxnTuBYrG/I0ToVpO32rsbL8NE6nG1nuCt2CyJ6rotKmMbJ+mLPrrs+KjsS2keWMaVyLJ2/Id9B5aOgX2hcrudhe2f8MzNv1NG5Xn7WRqX0Sk387z37yPF+F1u/vdP0ip/lHHUit7VGBNVltbBuYu1uf6juycXc35KhbGwOJbQNzK/XG7jjGjs7QLYh4j6ztUYE1WW1sG5i7W5/qO7Jxn7wh38Hk/1P9m+Yd20aWMyyPgezuf0ZVg3T1Uzuycr+fIvv+7Hk9JnZqn8jT1m/1PlfaVb9KM07z79v/hNTA3Hfr1s6ioqrz690NOepVvZFpmKv0mL86jmPXWdxBtyDiPbp7VlqWx9x369bOoqKq8+unbch3g54Zsf1U/6Z5x7aR5SKTf9UYmO9qMJxYP7UNH8PjVCb/dp795Hm+iifvf/g+d76LnX6n+feRB9JVur5+vbshd2NGMg1zq32vjDPpd9EtiHjf7jkqLctj7rv1rL6i6+vXT96Q72Dy/4n+xTkakw9GlotM/lVjYH7l3l092z6Jyb+dZz95nq/iyfsfvs+d72Kn32n+XT6QThN1snw3jvFKPauviONk465uyEamTfVRx/bU18nqOt3aU/+76BZE9lxOpyFZvhvHeKWe1VfEcbJxn7wh30H0O7af5l+cnzP5YFR9nUxf2f92723XsY3stO066icx+RfngkztT+BJ6/fqu7+qGaf51x5IDZuAR6TTHKypaju9qneu6jEqUMc6v85eKPZBqlwMx68zzcjaWZ2B2qR7G0Hd4w6mBdHdr9McrKlqO72qd67qMSpQxzq/ftKG/CrcQ/TPedovtBjISj7qWQ6J/mF91S/LGViPNbF+ahuW83ymn0L3+yM+dzaPqvZTeNr+173PV2in+TceSEXPK19o9gE9jadtKN+N/OOQfxzyj0P+ccg/jtP804GU5JUvVAdSMSH/OOQfh/zjkH8c8o/jNP90ICV55QvVgVRMyD8O+cch/zjkH4f84zjNPx1ISbQgOOQfh/zjkH8c8o9D/nHIP47T/Pt1ILWHUigUCoVCoVAofiL0J6QkZqK4jvzjkH8c8o9D/nHIPw75x3GafzqQkmhBcMg/DvnHIf845B+H/OOQfxyn+acDKYkWBIf845B/HPKPQ/5xyD8O+cdxmn86kJJoQXDIPw75xyH/OOQfh/zjkH8cp/mnAymJFgSH/OOQfxzyj0P+ccg/DvnHcZp/vx1I3/3fvrTn/845PH1BvNrL6J++vz20IXPIP4539O+kPUbfH4f84zjNv/FA6r9gVxYx1q7UR670QVb6d8/m2s448YWu9I34WFf6XmHnPq9+psk/92XlObB2pT5ypQ+y0r97Ntd2xtGGPNP5+jT/urmuaBldv8o/7JP1+0nY57lzbiv+dazWPZVP2v9W3nWmd/1O8689kGYTq8i0rj5jtz4y9Xd95Vm7sVCLL7Trl7Fz35/g1c/T+bfjTabtPvtufWTq7/rKs3ZjofZJG/IVJl+f5F831xUt1hhdPyPzb2Wcn4R5lrvntupfRqxjnuNd+ZT9b+Vdew61qd9p/t1yIK3yRjee4Tn7iVFR1VX5jEyPuWqMmMcXahqGE/t0GuKa/fSIoDbpzmqdkdXeSVwQeL/VZ+mesRvP8Jz9xKio6qp8RqbHXDVGzH/KhnyVydcn+4dznXwwslxk8m91DAzE21HLah3XqpqoYU2sj22k0xCr80C8jdoV/5xq/E/iU/e/7F17rvsOonaaf+1faooPX0101YCsbtIRtr8zjWNUY8X8yobSjV3dxzBtt2+ne7vKO90Yd9MtiOk5ne4Zp7lMOsL2d6ZxjGqsmP/UDXmVydcn+4dznXwwslxk8m8aY7qvXU9tJLaNqX7SKzrN6caz69je9Q+JtTt9n8Kn7n/du+++g6id5l97IDVsAh4Vq1pWN+kI29+ZxjGqsWJ+dUPxfKZbzgOpap0rulHlnZUx7mJaEHZ/j4pVLaubdITt70zjGNVYMf+pG/Iqk69P9W+ad2wbWc6wvEdkdf9zMh1zUd9tG914RjVGVotk/TwqUMv6Z/5hTOzUPpFP2v+6d4256lvI8qf5pz8h/T8xV40V86sbsucr3UE9q416Fg5eI1ke+6Oe1d5JtyDivatn6Z5xmsukI2x/ZxrHqMaK+U/akK8w+fpU/6Z5x7aR5SKTf9MY032jvtLOwsFrJ+a8ndUilZ6Nh+FkdZN/sY3s1D6VT93/8F2vfgdZ/jT/dCD9PzFXjRXzqxuy5yvdQT2rnXSk0mO+a0/3YOkWxPScTveM01wmHWH7O9M4RjVWzH/qhrzK5OsT/cu+nckHI8tFJv+mMab7Rn23Hcn0aowrYxmYr8Y2Mm3yL7aRndqn8qn7H75ru84CiW3nNP9uOZAamTb1tzbmsjGQTN/p70zjGN1YqO1syLv3tetJ76j6TmPG9ivpFkT3nJFMm/pbG3PZGEim7/R3pnGMbizUPnVDXmXy9Wn+Vd/N5IOxkovtzL9unOkeUd9tR7L6rM9duXhdaYa1p98fU38ktj+BT9n/dt71Tu1p/t3y/5A6WFvVRz3WoZbhelbX9TNi31hf5TO8rtqQszGqcb0+6t6udAO1rCbLxxoDa6baO5kWhD/XynNgbVUf9ViHWobrWV3Xz4h9Y32Vz/C6T9mQGTpfn+QfzjOb70p+0iOVf9gn9ps0ZGobPg4GEvNRN1Zzho/lEcE86rHW2t3vj6w+UtV+Cp+0/62+a9Sxjwdymn/jgVT0vPKFxo/niXzShvIK5B+H/ON4in/ZXvsd+6++Pw75x3GafzqQkrzyhepAKibkH4f843iCfz91GDX0/XHIP47T/NOBlOSVL1QHUjEh/zjkH8cT/PvJfVbfH4f84zjNPx1ISbQgOOQfh/zjkH8c8o9D/nHIP47T/Pt1ILWHUigUCoVCoVAofiL0J6QkZqK4jvzjkH8c8o9D/nHIPw75x3GafzqQkmhBcMg/DvnHIf845B+H/OOQfxyn+acDKYkWBIf845B/HPKPQ/5xyD8O+cdxmn86kJJoQXDIPw75xyH/OOQfh/zjkH8cp/mnAymJFgSH/OOQfxzyj0P+ccg/DvnHcZp/vx1IV/9Ntk/4NzJXuPuFfpqv0T99f3toQ+aQfxw7/mnN/o6+Pw75x3Gaf+OB1NoeyJXNZbdPVn/lvjvY+BgTd2/IKzVPIvoX5+/vIcvvstsnq79y3x1sfIwJbcgznZ9P86+b6yu0zL+qPuvP8ooxv5Pq+6s8rNipfRLa//6he/+uZfpp/rUH0jiBTpvw+p1+u/dgye43PcPdL/S75/zTRP9w/tGLTpvw+p1+u/dgye43PYM25J7oX2w/yb9urq/QjG79Gt1Yd/CKMb+T7PvbnZPXv7sXV9D+17//mIvt0/y75UAa6zK8pqq1vEdse87Aa8PbWa2DWldTgVqsYzdky3l4G0E9asakn07nX5xPpa3M22uqWst7xLbnDLw2vJ3VOqh1NRWoxTptyD3Rr0/yr/tu7tCMaf9DXLOfHhHUou7tWOPxjuz4V+F93tUDBu1/X6y8/1hzmn/tX2qKD19NeDJiGqdqZ+NmtVV/o9OQKm90400bStc3a3f1xo7+DnQLIs6lmts052mcqp2Nm9VW/Y1OQ6q80Y2nDbln8v/J/nXfzR2aMe1/iGndeFnfqHf935Ed/zKiP5+G9r8vVt5/rDnNv/ZAatgEMK4Q+01tJ8uv9MXcSr1R5Y1uvOyFek2sndoG5lj9HZgWhM0H4wqx39R2svxKX8yt1BtV3ujG04bcM/n/VP+meWN7pRYDqfa/rDa2Dcyx+jsS/bP5YExgzUr909D+90X1/v1byvTT/BsPpMiVD74zyVmpcWJuqlmpN6q80Y1Xbcj405naBubsOgsHr50sdzI7C+LK3Ko+k49Glo+5qWal3qjyRjeeNuSeyf+n+jfNG9tTLRK1yb/uPsad+jsS/Yvz6ea3U/tUtP99sfL+Y81p/n3LgbQKB6+RLB9zqzUeFatarMteqNfE2qltYC7Tkan/O7CzIK7MzfpU4eA1kuVjbrXGo2JVi3XakHuiX5/gX/YtdT5MHiFRm/zr7mPcqb8j0b84n25+pmXxSWj/+2Ll3cea0/xbPpB2k620ySDXY12VN6paBHOZXnHlftULvTKWtTGXjYFk+tTnNFYXRDevSlv1L9ZVeaOqRTCX6RVX7qcNuefT/Mu+IaPzYfLIyfLRv537GHfq7wjrH/LuXlxB+98X2fvvvifjNP/Gv9Tk0VHpO/38PrFPzGV6pBrDo2OlFvXqhWZ9q5yHtxHUPZBOewe6BbE6r0rf6ef3iX1iLtMj1RgeHSu1qGtDnkG/Ik/yD+eZzbfKG5VW5Z3Mv6pPNkZWg4HEtpPVvgusf8i7esCg/e/f34sHUuWN0/zb+k/270j2ErLcVbQgOJ7un76/s5F/HPKPQ/5xyD+O0/zTgZREC4Lj6f7p+zsb+cch/zjkH4f84zjNv8cfSA07AGDciRYExyf4p+/vXOQfh/zjkH8c8o/jNP8+4kD6SrQgOOQfh/zjkH8c8o9D/nHIP47T/Pt1ILWHUigUCoVCoVAofiL0J6QkZqK4jvzjkH8c8o9D/nHIPw75x3GafzqQkmhBcMg/DvnHIf845B+H/OOQfxyn+acDKYkWBIf845B/HPKPQ/5xyD8O+cdxmn86kJJoQXDIPw75xyH/OOQfh/zjkH8cp/mnAymJFgSH/OOQfxzyj0P+ccg/DvnHcZp/vx1IV/+dxDv+PcW7/03Gn+DuF/oET3aI/un720MbMof849jx79P2thX0/XHIP47T/BsPpNb2QFY2F+wbw/W7uHOsHe7ekH9qHj9F9C/O39oeyIpP2DeG63dx51g7aEOeie8deZp/3VxfoWX+VfVZf5ZXjPmdVN9f5WHFTu2T0P73D9X793wM5zT/2gMpXhudNpHV747RcedYO9z9Qn9qHj9F9A/nH73otImsfneMjjvH2kEbck98L7H9JP+6ub5CM7r1a3Rj3cErxvxOsu9vd05e/+5eXEH73/77x7rT/LvlQBrrMrIaz9lPjwhqme5MWjWGtyvdQC3WsBuyj+darEE9asakn07nX5xPpa3MO6vxnP30iKCW6c6kVWN4u9IN1GKNNuQe9MqI7Sf7h3PtfLiqGdP+h7hmPz0iqEXd27HG4x3Z8a/C+7yrBwza/75Yef+x5jT/2r/UFB++mvAVIwzLdfeo+mTs5OM9Yk3UkdieNpSdsazd1Rs7+jvQLYg4l2puK3OuvOruUfXJ2MnHe8SaqCOxrQ2555P9W/2OrmrGtP8hpnXjZX2j3vV/R3b8y4j+fBra/75Yef+x5jT/2gOpYRPAuErWd8qt9jF28jv3iHpsZy/Ua6a+sW1gjtXfgWlB2HwwrpL1nXKrfYyd/M49oh7b2pB7PtW/ad7YXqnFQKr9L6uNbQNzrP6ORP9sPhgTWLNS/zS0/30xvf9MP82/8UCKMB981nfK2XUWGTt5zO3qsV1tyPjTmdoG5uw6CwevnSx3MjsLgpnbqleYs+ssMnbymNvVY1sbcs+n+jfNG9tTLRK1yb/uPsad+jsS/Yvz6ea3U/tUtP99Mb3/TD/Nv+MPpKtUtVfuEXPW9ohkL9TrsnGQbDzMZToy9X8HdhYEM7dVrzC3c7+q9so9Ys7aHhFtyD2Zl8gT/cu+k86HySMkapN/3X2MO/V3JPoX59PNz7QsPgntf19M7z7TT/Nv+UDaTXZlEWQ1U25lXKeqvXKPSUeqFzqNa2RtzGVjIJk+9TmN1QXRzWtlzqteYW5lXKeqvXKPSUe0IfdE/2L7af5V30vnw+SRk+Wjfzv3Me7U3xHWP+TdvbiC9r8vuvdfaaf5N/6lJo+OSTeympWctWNkdHVV3ohtI6vBQKoXGuuMKofjxhrUPZBOewe6BbE6r5V5ZzUrOWvHyOjqqrwR20ZWg4FoQ56pvDOe5B/OM5tvlTcqrco7mX9Vn2yMrAYDiW0nq30XWP+Qd/WAQfvfv78Xj0iWM07zb+s/2X8i08vVguCQfz36/l6L/OOQfxzyj0P+cZzmnw6kAzoQvBb516Pv77XIPw75xyH/OOQfx2n+6UC6gB0AMBAtCA75N6Pv73XIPw75xyH/OOQfx2n+6UBKogXBIf845B+H/OOQfxzyj0P+cZzm368DqT2UQqFQKBQKhULxE6E/ISUxE8V15B+H/OOQfxzyj0P+ccg/jtP804GURAuCQ/5xyD8O+cch/zjkH4f84zjNPx1ISbQgOOQfh/zjkH8c8o9D/nHIP47T/NOBlEQLgkP+ccg/DvnHIf845B+H/OM4zT8dSEm0IDjkH4f845B/HPKPQ/5xyD+O0/z77UAa/53DitW6p3P3C/00X6N/+v720IbMIf845B+H/OOQfxyn+TceSK3tgaweCKq6nf4Yd3HXWDsvdOWed87xHYj+xflb2wNZ9amq2+mPcRd3jaUNeaZ7f0/zr5vrK7Rs/cZ4KnfMrfr+Vv1brXsq2v/+ofsGOu00/9oDaZxEp1VUdSv9s5rV+07cNc7dL/Su53oXsl9oTvSi0yqqupX+Wc3qfSfuGkcbck/0Obaf5F8311doRrd+nSz3BO6YV/b9rY4b657qc4f2v6/3nr3/TjNO8++WA2k1WaPSuj7GpBtWg4F4O9MxF/P+M+YxkGlDxnbUDB/TtViDetSMST+dzr84n0rr5l1pXR9j0g2rwUC8nemYi3n/GfMYiDbknujXJ/mHc+18uKoZ0/7nZONgRDKtqnP8OuuHbcS1rMbbmY45zBtd3n/69ap/GdX4n4T2vy+6919pp/nX/qWm1Q/+ihFdH+OKjjm7jjVRj0x9HMxNGwq2p7Gt3dUbO/o70C2IOJdqbt2cr/QxruiYs+tYE/XI1MfBnDbknsnPJ/uHc+18uKoZ0/7ndGMane7tlX5TG4lto+tvRD0y1Ud91b+M7l6fgva/L7r3X2mn+dceSA2bCMYuVZ9prCs65ljdmXLZC3U99p3aBuZY/R2YFoTNB2OXqs801hUdc6zuTDltyD3Rv9h+qn/TvLG9UouBRP+i7mA+q5l0Y7ffbtvoxjMmPTLVZ/5hdER9qn8i2v++6N5/pZ3m33ggRa588FUfzNu1h1P1czJ96r+jO1Mue6Gux75T28CcXWfh4LWT5U5mZ0FcmVvVJ/ro4VT9nEyf+u/ozpTThtwT/Yvtp/o3zRvbUy0Stehf1be7nzHpxm6/lXYWDl47k274OB5OVj/5l/Vxdmqfiva/L3a+Fec0/444kGZc0THH6s6Uy16o67Hv1DYwl+nI1P8d2FkQV+ZW9bniLZLpmGN1Z8ppQ+6J/sX2E/1b+Y6wPXmERC36V/Xt7mdMurHbb7cdyXTMTbox1U/+ZX2cndqnov3vi51vxTnNv+UD6ZXJOlGf6p2sznOdZrC6M+WqF7oyVtbGXDYGkulTn9NYXRDdvHZ9WvUoq/Ncpxms7kw5bcg90b/Yfpp/2fdidD5MHjlZPvqX1ayMj7mqPsuv9HOmdiTTMbeiT/WTf13/qf0JaP/7onv/lXaaf+NfavLomHRjdawI9ot9Jy2S1WAu62N4Xaw3qheajVXlcNxYg7oH0mnvQLcgVue1Mu/VsSLYL/adtEhWg7msj+F1sd7QhjxTeWc8yT+cZzbfKm9UWpV3on9Y3/Wbaiot5lHPapHYNiwXw8FrJ+ZiHwNzqMU6I/v+vH+sz/pXtZ+C9r9/fwPxW+g04zT/tv6TvfgdLQgO+cch/zjkH4f845B/HPKP4zT/dCAl0YLgkH8c8o9D/nHIPw75xyH/OE7zTwdSEi0IDvnHIf845B+H/OOQfxzyj+M0/3QgJdGC4JB/HPKPQ/5xyD8O+cch/zhO8+/XgdQeSqFQKBQKhUKh+InQn5CSmIniOvKPQ/5xyD8O+cch/zjkH8dp/ulASqIFwSH/OOQfh/zjkH8c8o9D/nGc5p8OpCRaEBzyj0P+ccg/DvnHIf845B/HWf79/ff/AGpfvXAUHbYSAAAAAElFTkSuQmCC</BG_Image>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="572" y="164" width="825" height="571" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>3. Jointure, transformation  et tri des données</Caption>
+          <Style TextColor="#000000" FillColor="#80ff80" BorderColor="#000000" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="582" y="257" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="titleId" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="tconst" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_title" selected="True" rename="Titre français" input="Left_" />
+                    <SelectField field="Right_titleType" selected="True" input="Right_" />
+                    <SelectField field="Right_originalTitle" selected="True" input="Right_" />
+                    <SelectField field="Right_isAdult" selected="True" input="Right_" />
+                    <SelectField field="Right_startYear" selected="True" input="Right_" />
+                    <SelectField field="Right_genres" selected="True" input="Right_" />
+                    <SelectField field="Right_averageRating" selected="True" input="Right_" />
+                    <SelectField field="Right_numVotes" selected="True" input="Right_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Jointure sur les colonnes [titleId] et [tconst].
+
+On sélectionne les colonnes suivantes:
+ - [title] renommé [Titre français]
+ - [titleType]
+ - [originalTitle]
+ - [isAdult]
+ - [startYear]
+ - [genres]
+ - [averageRating]
+ - [numVotes]</AnnotationText>
+              <DefaultAnnotationText>Jointure sur les colonnes [titleId] et [tconst].
+
+On sélectionne les colonnes suivantes:
+ - [title] renommé [Titre français]
+ - [titleType]
+ - [originalTitle]
+ - [isAdult]
+ - [startYear]
+ - [genres]
+ - [averageRating]
+ - [numVotes]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="702" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Certaines oeuvres n'ont pas de titres français. On a donc des oeuvres manquantes dans le membre gauche de la jointure. On récupère donc les données manquantes en faisant une union avec les données ignorées par la jointure</AnnotationText>
+              <DefaultAnnotationText>Certaines oeuvres n'ont pas de titres français. On a donc des oeuvres manquantes dans le membre gauche de la jointure. On récupère donc les données manquantes en faisant une union avec les données ignorées par la jointure</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1182" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>&gt;</Operator>
+                <Field>Nombre de votes</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-09-30 17:10:36</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>10</Operand>
+                  <StartDate>2021-09-30 17:10:36</StartDate>
+                  <EndDate>2021-09-30 17:10:36</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>[Nombre de votes] &gt; "10"
+
+On ne garde que les oeuvres qui ont plus de 10 votes pour une meilleure pertinence.</AnnotationText>
+              <DefaultAnnotationText>[Nombre de votes] &gt; "10"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="942" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if isNull([Titre français])&#xA;then [Titre original] &#xA;else [Titre français]&#xA;endif" field="Titre français" size="254" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Pour toutes les oeuvres qui n'ont pas de titre français, on utilise le titre original comme titre français.</AnnotationText>
+              <DefaultAnnotationText>Titre français = if isNull([Titre français])
+then [Titre original] 
+else [Titre ...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="822" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Titre français" selected="True" />
+                <SelectField field="titleType" selected="True" rename="Type" />
+                <SelectField field="originalTitle" selected="True" rename="Titre original" />
+                <SelectField field="isAdult" selected="True" rename="Pour adulte" />
+                <SelectField field="startYear" selected="True" rename="Année" />
+                <SelectField field="genres" selected="True" rename="Genres" />
+                <SelectField field="averageRating" selected="True" rename="Note" />
+                <SelectField field="numVotes" selected="True" rename="Nombre de votes" />
+                <SelectField field="frenchTitle" selected="False" rename="Titre français" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>On supprime la colonne [tconst].
+
+On sélectionne les colonnes suivantes:
+ - [Titre français]
+ - [titleType] renomé [Titre]
+ - [originalTitle] renommé [Titre original]
+ - [isAdult] renommé [Pour adulte]
+ - [startYear] renommé [Année]
+ - [genres] renommé [Genres]
+ - [averageRating] renommé [Note]
+ - [numVotes] renommé [Nombre de votes]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="582" y="198" width="804" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>3. Jointure, transformation et tri des données</Text>
+              <Font name="Arial" size="15.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="40" g="40" b="40" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1290" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="1036">
+                <Field field="Titre français" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Titre français - Croissant
+
+Tri alphabétique croissant sur [Titre français]</AnnotationText>
+              <DefaultAnnotationText>Titre français - Croissant</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="JupyterCode">
+            <Position x="1062" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <WorkflowName>c:\users\emin\desktop\bi\workflow_tekeli_emin-can.yxmd</WorkflowName>
+              <JupyterProduction>false</JupyterProduction>
+              <vEnvName>designerbasetools_venv</vEnvName>
+              <DefaultVenv>1</DefaultVenv>
+              <productionModeScript />
+              <Port>56664</Port>
+              <JupyterGuidDir>919da37fbb1ea984dc0845e9de2719a1</JupyterGuidDir>
+              <JupyterGuidCopy />
+              <LastExecutedByEngineVersion>2021.3.1.47945</LastExecutedByEngineVersion>
+              <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"}},"outputs":[],"source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Alteryx\n","import pandas as pd\n","#Alteryx.installPackages(['pandas','numpy'])\n","\n","df = Alteryx.read(\"#1\")\n","df = df.dropna() #suppression des lignes avec de null\n","for col in list(df.columns):\n","    df = df.drop(df[df[col] == \"\\\\N\"].index) #suppression des lignes avec des \"\\N\"\n","Alteryx.write(df,1)"]},{"cell_type":"code","execution_count":null,"metadata":{},"outputs":[],"source":[]}],"metadata":{"kernelspec":{"display_name":"designerbasetools_venv","language":"python","name":"designerbasetools_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.8.5"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Script Python pour la suppression des lignes contenant des champs nuls ou contenant des sauts de lignes. Doit être exécuté au moins une fois pour faire disparaitre l'erreur (pour générer les fichiers temporaires nécessaires).</AnnotationText>
+              <DefaultAnnotationText>Script Python pour la suppression des lignes contenant des champs nuls ou contenant des sauts de lignes. Doit être exécuté au moins une fois pour faire disparaitre l'erreur (pour générer les fichiers temporaires nécessaires).</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="Titre français" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Type" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Titre original" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Pour adulte" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Année" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Genres" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Note" size="1073741823" source="PythonTool:" type="V_WString" />
+                <Field name="Nombre de votes" size="1073741823" source="PythonTool:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="452" width="500" height="408" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2. Extraction et jointure des informations basiques et des notes des oeuvres</Caption>
+          <Style TextColor="#000000" FillColor="#ffa851" BorderColor="#000000" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="185" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>True</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[data.tsv
+
+Dataset: title.basics.tsv.gz ]]></AnnotationText>
+              <DefaultAnnotationText>data.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tconst" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+                <Field name="titleType" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+                <Field name="primaryTitle" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+                <Field name="originalTitle" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+                <Field name="isAdult" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+                <Field name="startYear" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+                <Field name="endYear" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+                <Field name="runtimeMinutes" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+                <Field name="genres" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_basics\data.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="186" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\emin\Desktop\bi\imdb\title_ratings\data.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>True</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>data.tsv
+
+Dataset: title.ratings.tsv.gz</AnnotationText>
+              <DefaultAnnotationText>data.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tconst" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_ratings\data.tsv" type="V_WString" />
+                <Field name="averageRating" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_ratings\data.tsv" type="V_WString" />
+                <Field name="numVotes" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_ratings\data.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="342" y="594" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="tconst" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="tconst" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_primaryTitle" selected="False" input="Left_" />
+                    <SelectField field="Left_endYear" selected="False" input="Left_" />
+                    <SelectField field="Left_runtimeMinutes" selected="False" input="Left_" />
+                    <SelectField field="Right_tconst" selected="False" rename="Right_tconst" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Jointure sur la colonne [tconst]
+
+On sélectionne les colonnes suivantes:
+ - [tconst]
+ - [originalTitle]
+ - [isAdult]
+ - [startYear]
+ - [genres]
+ - [averageRating]
+ - [numVotes]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="66" y="486" width="480" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>2. Extraction et jointure des informations basiques et des notes des oeuvres</Text>
+              <Font name="Arial" size="15.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="40" g="40" b="40" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="164" width="500" height="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>1. Extraction des titres français des oeuvres</Caption>
+          <Style TextColor="#000000" FillColor="#8ec6c6" BorderColor="#000000" Transparency="25" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="150" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>True</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>data.tsv
+
+Dataset: title.akas.tsv.gz</AnnotationText>
+              <DefaultAnnotationText>data.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="titleId" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv" type="V_WString" />
+                <Field name="ordering" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv" type="V_WString" />
+                <Field name="title" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv" type="V_WString" />
+                <Field name="region" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv" type="V_WString" />
+                <Field name="language" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv" type="V_WString" />
+                <Field name="types" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv" type="V_WString" />
+                <Field name="attributes" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv" type="V_WString" />
+                <Field name="isOriginalTitle" size="254" source="File: C:\Users\emin\Desktop\bi\imdb\title_akas\data.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="246" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>region</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2021-09-19 16:22:31</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>FR</Operand>
+                  <StartDate>2021-09-19 16:22:31</StartDate>
+                  <EndDate>2021-09-19 16:22:31</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>[region] = "FR"
+On filtre les titres en français.</AnnotationText>
+              <DefaultAnnotationText>[region] = "FR"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="354" y="258" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="titleId" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Plusieurs titres français sont disponibles pour une même oeuvre, on en garde qu'un à chaque fois</AnnotationText>
+              <DefaultAnnotationText>Plusieurs titre français sont disponibles pour un même film, on en garde qu'un à chaque fois</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="66" y="198" width="480" height="48" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>1. Extraction des titres français des oeuvres</Text>
+              <Font name="Arial" size="15.75" style="1" />
+              <TextColor name="White" />
+              <FillColor r="40" g="40" b="40" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="14" Connection="Join" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="14" Connection="Right" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output1" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="14" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Unique" />
+      <Destination ToolID="14" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>workflow_TEKELI_Emin-Can</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="0d675c09-4092-4acb-aac5-6364a7137a09" />
+      <Telemetry>
+        <PreviousWorkflowId value="c9ab7f39-6201-4984-98b9-3a0657114da8" />
+        <OriginWorkflowId value="c5035718-b128-4773-bfa7-350f5165b4c1" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
